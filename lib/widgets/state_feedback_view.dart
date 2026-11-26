@@ -73,7 +73,7 @@ class StateFeedbackView extends StatelessWidget {
     final isLoading = actionLabel == null && title == 'Mohon Tunggu Sebentar';
 
     return Center(
-      child: Padding(
+      child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Container(
           constraints: const BoxConstraints(maxWidth: 440),
